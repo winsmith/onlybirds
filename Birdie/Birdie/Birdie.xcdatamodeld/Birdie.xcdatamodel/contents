@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21277" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Bird" representedClassName="Bird" syncable="YES" codeGenerationType="class">
+        <attribute name="canonicalName" optional="YES" attributeType="String"/>
+        <relationship name="encounters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Encounter" inverseName="bird" inverseEntity="Encounter"/>
+        <relationship name="synonyms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BirdSynonym" inverseName="bird" inverseEntity="BirdSynonym"/>
+    </entity>
+    <entity name="BirdSynonym" representedClassName="BirdSynonym" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="bird" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Bird" inverseName="synonyms" inverseEntity="Bird"/>
+    </entity>
+    <entity name="Encounter" representedClassName="Encounter" syncable="YES" codeGenerationType="class">
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="bird" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bird" inverseName="encounters" inverseEntity="Bird"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>

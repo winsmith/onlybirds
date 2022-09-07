@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117828C8F11400CCE310 /* BirdieApp.swift */; };
+		2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117A28C8F11400CCE310 /* ContentView.swift */; };
+		2BC1117D28C8F11500CCE310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1117C28C8F11500CCE310 /* Assets.xcassets */; };
+		2BC1118028C8F11500CCE310 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1117F28C8F11500CCE310 /* Preview Assets.xcassets */; };
+		2BC1118228C8F11500CCE310 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118128C8F11500CCE310 /* Persistence.swift */; };
+		2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */; };
+		2BC1118F28C8F11500CCE310 /* BirdieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118E28C8F11500CCE310 /* BirdieTests.swift */; };
+		2BC1119928C8F11500CCE310 /* BirdieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119828C8F11500CCE310 /* BirdieUITests.swift */; };
+		2BC1119B28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */; };
+		2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */; };
+		2BC111AA28C8FACB00CCE310 /* BirdSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A928C8FACB00CCE310 /* BirdSelector.swift */; };
+		2BC111AC28C8FF2500CCE310 /* EncounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111AB28C8FF2500CCE310 /* EncounterList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BC1118B28C8F11500CCE310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC1116D28C8F11400CCE310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BC1117428C8F11400CCE310;
+			remoteInfo = Birdie;
+		};
+		2BC1119528C8F11500CCE310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC1116D28C8F11400CCE310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BC1117428C8F11400CCE310;
+			remoteInfo = Birdie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BC1117528C8F11400CCE310 /* Birdie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC1117828C8F11400CCE310 /* BirdieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieApp.swift; sourceTree = "<group>"; };
+		2BC1117A28C8F11400CCE310 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BC1117C28C8F11500CCE310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BC1117F28C8F11500CCE310 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BC1118128C8F11500CCE310 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2BC1118428C8F11500CCE310 /* Birdie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Birdie.xcdatamodel; sourceTree = "<group>"; };
+		2BC1118A28C8F11500CCE310 /* BirdieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC1118E28C8F11500CCE310 /* BirdieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieTests.swift; sourceTree = "<group>"; };
+		2BC1119428C8F11500CCE310 /* BirdieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC1119828C8F11500CCE310 /* BirdieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITests.swift; sourceTree = "<group>"; };
+		2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdNameUpdater.swift; sourceTree = "<group>"; };
+		2BC111A928C8FACB00CCE310 /* BirdSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSelector.swift; sourceTree = "<group>"; };
+		2BC111AB28C8FF2500CCE310 /* EncounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BC1117228C8F11400CCE310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC1118728C8F11500CCE310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC1119128C8F11500CCE310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BC1116C28C8F11400CCE310 = {
+			isa = PBXGroup;
+			children = (
+				2BC1117728C8F11400CCE310 /* Birdie */,
+				2BC1118D28C8F11500CCE310 /* BirdieTests */,
+				2BC1119728C8F11500CCE310 /* BirdieUITests */,
+				2BC1117628C8F11400CCE310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BC1117628C8F11400CCE310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1117528C8F11400CCE310 /* Birdie.app */,
+				2BC1118A28C8F11500CCE310 /* BirdieTests.xctest */,
+				2BC1119428C8F11500CCE310 /* BirdieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BC1117728C8F11400CCE310 /* Birdie */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1117828C8F11400CCE310 /* BirdieApp.swift */,
+				2BC1117A28C8F11400CCE310 /* ContentView.swift */,
+				2BC1117C28C8F11500CCE310 /* Assets.xcassets */,
+				2BC1118128C8F11500CCE310 /* Persistence.swift */,
+				2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */,
+				2BC1117E28C8F11500CCE310 /* Preview Content */,
+				2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */,
+				2BC111A928C8FACB00CCE310 /* BirdSelector.swift */,
+				2BC111AB28C8FF2500CCE310 /* EncounterList.swift */,
+			);
+			path = Birdie;
+			sourceTree = "<group>";
+		};
+		2BC1117E28C8F11500CCE310 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1117F28C8F11500CCE310 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BC1118D28C8F11500CCE310 /* BirdieTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1118E28C8F11500CCE310 /* BirdieTests.swift */,
+			);
+			path = BirdieTests;
+			sourceTree = "<group>";
+		};
+		2BC1119728C8F11500CCE310 /* BirdieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1119828C8F11500CCE310 /* BirdieUITests.swift */,
+				2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */,
+			);
+			path = BirdieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BC1117428C8F11400CCE310 /* Birdie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC1119E28C8F11500CCE310 /* Build configuration list for PBXNativeTarget "Birdie" */;
+			buildPhases = (
+				2BC1117128C8F11400CCE310 /* Sources */,
+				2BC1117228C8F11400CCE310 /* Frameworks */,
+				2BC1117328C8F11400CCE310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Birdie;
+			productName = Birdie;
+			productReference = 2BC1117528C8F11400CCE310 /* Birdie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BC1118928C8F11500CCE310 /* BirdieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC111A128C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieTests" */;
+			buildPhases = (
+				2BC1118628C8F11500CCE310 /* Sources */,
+				2BC1118728C8F11500CCE310 /* Frameworks */,
+				2BC1118828C8F11500CCE310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BC1118C28C8F11500CCE310 /* PBXTargetDependency */,
+			);
+			name = BirdieTests;
+			productName = BirdieTests;
+			productReference = 2BC1118A28C8F11500CCE310 /* BirdieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BC1119328C8F11500CCE310 /* BirdieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC111A428C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieUITests" */;
+			buildPhases = (
+				2BC1119028C8F11500CCE310 /* Sources */,
+				2BC1119128C8F11500CCE310 /* Frameworks */,
+				2BC1119228C8F11500CCE310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BC1119628C8F11500CCE310 /* PBXTargetDependency */,
+			);
+			name = BirdieUITests;
+			productName = BirdieUITests;
+			productReference = 2BC1119428C8F11500CCE310 /* BirdieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BC1116D28C8F11400CCE310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					2BC1117428C8F11400CCE310 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					2BC1118928C8F11500CCE310 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 2BC1117428C8F11400CCE310;
+					};
+					2BC1119328C8F11500CCE310 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 2BC1117428C8F11400CCE310;
+					};
+				};
+			};
+			buildConfigurationList = 2BC1117028C8F11400CCE310 /* Build configuration list for PBXProject "Birdie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BC1116C28C8F11400CCE310;
+			productRefGroup = 2BC1117628C8F11400CCE310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BC1117428C8F11400CCE310 /* Birdie */,
+				2BC1118928C8F11500CCE310 /* BirdieTests */,
+				2BC1119328C8F11500CCE310 /* BirdieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BC1117328C8F11400CCE310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC1118028C8F11500CCE310 /* Preview Assets.xcassets in Resources */,
+				2BC1117D28C8F11500CCE310 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC1118828C8F11500CCE310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC1119228C8F11500CCE310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BC1117128C8F11400CCE310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC111AC28C8FF2500CCE310 /* EncounterList.swift in Sources */,
+				2BC1118228C8F11500CCE310 /* Persistence.swift in Sources */,
+				2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */,
+				2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */,
+				2BC111AA28C8FACB00CCE310 /* BirdSelector.swift in Sources */,
+				2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */,
+				2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC1118628C8F11500CCE310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC1118F28C8F11500CCE310 /* BirdieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BC1119028C8F11500CCE310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC1119928C8F11500CCE310 /* BirdieUITests.swift in Sources */,
+				2BC1119B28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BC1118C28C8F11500CCE310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BC1117428C8F11400CCE310 /* Birdie */;
+			targetProxy = 2BC1118B28C8F11500CCE310 /* PBXContainerItemProxy */;
+		};
+		2BC1119628C8F11500CCE310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BC1117428C8F11400CCE310 /* Birdie */;
+			targetProxy = 2BC1119528C8F11500CCE310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BC1119C28C8F11500CCE310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BC1119D28C8F11500CCE310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BC1119F28C8F11500CCE310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Birdie/Preview Content\"";
+				DEVELOPMENT_TEAM = FL4V655A94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.Birdie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BC111A028C8F11500CCE310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Birdie/Preview Content\"";
+				DEVELOPMENT_TEAM = FL4V655A94;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.Birdie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BC111A228C8F11500CCE310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FL4V655A94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.BirdieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birdie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Birdie";
+			};
+			name = Debug;
+		};
+		2BC111A328C8F11500CCE310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FL4V655A94;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.BirdieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birdie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Birdie";
+			};
+			name = Release;
+		};
+		2BC111A528C8F11500CCE310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FL4V655A94;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.BirdieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Birdie;
+			};
+			name = Debug;
+		};
+		2BC111A628C8F11500CCE310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FL4V655A94;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.breakthesystem.BirdieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Birdie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BC1117028C8F11400CCE310 /* Build configuration list for PBXProject "Birdie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC1119C28C8F11500CCE310 /* Debug */,
+				2BC1119D28C8F11500CCE310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC1119E28C8F11500CCE310 /* Build configuration list for PBXNativeTarget "Birdie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC1119F28C8F11500CCE310 /* Debug */,
+				2BC111A028C8F11500CCE310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC111A128C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC111A228C8F11500CCE310 /* Debug */,
+				2BC111A328C8F11500CCE310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC111A428C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC111A528C8F11500CCE310 /* Debug */,
+				2BC111A628C8F11500CCE310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2BC1118428C8F11500CCE310 /* Birdie.xcdatamodel */,
+			);
+			currentVersion = 2BC1118428C8F11500CCE310 /* Birdie.xcdatamodel */;
+			path = Birdie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2BC1116D28C8F11400CCE310 /* Project object */;
+}
