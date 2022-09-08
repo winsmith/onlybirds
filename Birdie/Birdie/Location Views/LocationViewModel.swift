@@ -59,6 +59,6 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
             return country
         }
             
-        return "–"
+        return "No Location"
     }
 }
