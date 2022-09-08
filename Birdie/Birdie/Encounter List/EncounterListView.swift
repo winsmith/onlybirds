@@ -25,35 +25,20 @@ struct EncounterListView: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.gray)
                 } else {
-                    
                     List {
                         ForEach(encounters) { section in
-                            
+
                             Section(section.id) {
                                 ForEach(section) { item in
-                                    EncounterListCell(encounter: item)
+                                    NavigationLink {
+                                        EncounterDetailView(encounter: item)
+                                    } label: {
+                                        EncounterListCell(encounter: item)
+                                    }
                                 }
                             }
-                            
-//                            Section(header: Text(section.id) {
-//                                ForEach(section) { item in
-//                                    Text(item.name) // Just an example
-//                                }
-                                
-//                            }
                         }
                     }
-                    
-//                    List {
-//                        ForEach(encounters) { item in
-//                            NavigationLink {
-//                                Text(item.timestamp ?? Date(), style: .relative)
-//                            } label: {
-//                                EncounterListCell(encounter: item)
-//                            }
-//                        }
-//                        .onDelete(perform: deleteItems)
-//                    }
                 }
             }
             .navigationTitle("Vögeln mit Nils")

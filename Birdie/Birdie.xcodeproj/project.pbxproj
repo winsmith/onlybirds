@@ -13,6 +13,7 @@
 		2B10EB1A28CA2B6C00C5EF1F /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB1928CA2B6C00C5EF1F /* LocationPickerView.swift */; };
 		2B10EB2028CA528800C5EF1F /* EncounterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB1F28CA528800C5EF1F /* EncounterListCell.swift */; };
 		2B10EB2228CA53D300C5EF1F /* Encounter+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB2128CA53D300C5EF1F /* Encounter+Section.swift */; };
+		2B10EB2428CA58AF00C5EF1F /* EncounterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB2328CA58AF00C5EF1F /* EncounterDetailView.swift */; };
 		2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117828C8F11400CCE310 /* BirdieApp.swift */; };
 		2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117A28C8F11400CCE310 /* ContentView.swift */; };
 		2BC1117D28C8F11500CCE310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1117C28C8F11500CCE310 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		2B10EB1928CA2B6C00C5EF1F /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
 		2B10EB1F28CA528800C5EF1F /* EncounterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterListCell.swift; sourceTree = "<group>"; };
 		2B10EB2128CA53D300C5EF1F /* Encounter+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+Section.swift"; sourceTree = "<group>"; };
+		2B10EB2328CA58AF00C5EF1F /* EncounterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterDetailView.swift; sourceTree = "<group>"; };
 		2BC1117528C8F11400CCE310 /* Birdie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC1117828C8F11400CCE310 /* BirdieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieApp.swift; sourceTree = "<group>"; };
 		2BC1117A28C8F11400CCE310 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */,
 				2B10EB1F28CA528800C5EF1F /* EncounterListCell.swift */,
+				2B10EB2328CA58AF00C5EF1F /* EncounterDetailView.swift */,
 			);
 			path = "Encounter List";
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */,
 				2B10EB2028CA528800C5EF1F /* EncounterListCell.swift in Sources */,
 				2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */,
+				2B10EB2428CA58AF00C5EF1F /* EncounterDetailView.swift in Sources */,
 				2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */,
 				2B10EB1328CA28CB00C5EF1F /* LocationViewModel.swift in Sources */,
 			);
