@@ -12,11 +12,6 @@ class BirdNameUpdater {
         self.context = context
     }
     
-    /// Remove all birds from the database
-    func clearDataBase() {
-        
-    }
-    
     func insertBirds(from url: URL) async throws {
         let fileContents = try await downloadFile(from: url)
         let birdNames = fileContents.split(separator: "\n").map { String($0) }
