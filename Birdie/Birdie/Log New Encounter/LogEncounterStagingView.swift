@@ -77,11 +77,11 @@ struct LogEncounterStagingView: View {
                     Button("Cancel", action: cancel)
                 }
             }
-//            .onAppear {
-//              DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-//                self.queryFieldIsFocused = true
-//              }
-//            }
+            .onAppear {
+              DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                self.queryFieldIsFocused = true
+              }
+            }
         }
     }
     
