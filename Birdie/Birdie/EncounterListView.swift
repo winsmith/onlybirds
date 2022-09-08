@@ -1,5 +1,5 @@
 //
-//  EncounterList.swift
+//  EncounterLisViewt.swift
 //  Birdie
 //
 //  Created by Daniel Jilg on 07.09.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EncounterList: View {
+struct EncounterListView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -54,6 +54,6 @@ struct EncounterList: View {
 
 struct EncounterList_Previews: PreviewProvider {
     static var previews: some View {
-        EncounterList()
+        EncounterListView()
     }
 }

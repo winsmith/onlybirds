@@ -18,12 +18,12 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            BirdSelector()
+            LogEncounterView()
                 .tabItem {
                     Label("Add", systemImage: "plus")
                 }
 
-            EncounterList()
+            EncounterListView()
                 .tabItem {
                     Label("Encounters", systemImage: "list.dash")
                 }

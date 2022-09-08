@@ -17,8 +17,8 @@
 		2BC1119928C8F11500CCE310 /* BirdieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119828C8F11500CCE310 /* BirdieUITests.swift */; };
 		2BC1119B28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */; };
 		2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */; };
-		2BC111AA28C8FACB00CCE310 /* BirdSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A928C8FACB00CCE310 /* BirdSelector.swift */; };
-		2BC111AC28C8FF2500CCE310 /* EncounterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111AB28C8FF2500CCE310 /* EncounterList.swift */; };
+		2BC111AA28C8FACB00CCE310 /* LogEncounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A928C8FACB00CCE310 /* LogEncounterView.swift */; };
+		2BC111AC28C8FF2500CCE310 /* EncounterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		2BC1119828C8F11500CCE310 /* BirdieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITests.swift; sourceTree = "<group>"; };
 		2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdNameUpdater.swift; sourceTree = "<group>"; };
-		2BC111A928C8FACB00CCE310 /* BirdSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSelector.swift; sourceTree = "<group>"; };
-		2BC111AB28C8FF2500CCE310 /* EncounterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterList.swift; sourceTree = "<group>"; };
+		2BC111A928C8FACB00CCE310 /* LogEncounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEncounterView.swift; sourceTree = "<group>"; };
+		2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 				2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */,
 				2BC1117E28C8F11500CCE310 /* Preview Content */,
 				2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */,
-				2BC111A928C8FACB00CCE310 /* BirdSelector.swift */,
-				2BC111AB28C8FF2500CCE310 /* EncounterList.swift */,
+				2BC111A928C8FACB00CCE310 /* LogEncounterView.swift */,
+				2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */,
 			);
 			path = Birdie;
 			sourceTree = "<group>";
@@ -272,11 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC111AC28C8FF2500CCE310 /* EncounterList.swift in Sources */,
+				2BC111AC28C8FF2500CCE310 /* EncounterListView.swift in Sources */,
 				2BC1118228C8F11500CCE310 /* Persistence.swift in Sources */,
 				2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */,
 				2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */,
-				2BC111AA28C8FACB00CCE310 /* BirdSelector.swift in Sources */,
+				2BC111AA28C8FACB00CCE310 /* LogEncounterView.swift in Sources */,
 				2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */,
 				2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */,
 			);
