@@ -12,8 +12,12 @@ struct LogEncounterStagingView: View {
     @State var encounterBirds: [Bird] = []
     @State var encounterLocation: String = ""
     
+    @Namespace var namespace
+    
     @State var query = ""
     @FocusState var queryFieldIsFocused: Bool
+    
+    @Environment(\.presentationMode) var presentation
     
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
@@ -26,44 +30,75 @@ struct LogEncounterStagingView: View {
         NavigationView {
             Form {
                 Section("Birds encountered") {
-                    if !queryFieldIsFocused {
+                    
                         ForEach(encounterBirds) { bird in
                             Text(bird.canonicalName ?? "BIRD")
                         }
-                    }
+                    
                     
                     TextField("Add Bird", text: $query)
                         .submitLabel(.done)
                         .focused($queryFieldIsFocused)
-                        .onChange(of: query) { value in
-                            filteredBirds.nsPredicate = query.isEmpty
-                                ? nil
-                                : NSPredicate(format: "canonicalName CONTAINS[cd] %@", value.lowercased())
-                        }
+                        .onChange(of: query, perform: updateQuery)
                     
                     if queryFieldIsFocused {
                         ForEach(filteredBirds, id: \.self) { bird in
                             Button(bird.canonicalName ?? "BIRD") {
-                                query = ""
-                                
                                 withAnimation {
-                                    queryFieldIsFocused = false
-                                    encounterBirds.append(bird)
+                                    addToEncounter(bird: bird)
                                 }
                             }
                         }
                     }
                 }
+                
+                .contentTransition(.interpolate)
             }
             .navigationTitle("Add Encounter")
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Save") {
-                        print("Pressed")
-                    }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Save", action: save)
+                }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel", action: cancel)
                 }
             }
+            .onAppear {
+              DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                self.queryFieldIsFocused = true
+              }
+            }
         }
+    }
+    
+    func updateQuery(value: String) {
+        filteredBirds.nsPredicate = query.isEmpty
+            ? nil
+            : NSPredicate(format: "canonicalName CONTAINS[cd] %@", value.lowercased())
+    }
+    
+    func addToEncounter(bird: Bird) {
+        query = ""
+        queryFieldIsFocused = false
+        encounterBirds.append(bird)
+        
+    }
+    
+    func save() {
+        for bird in encounterBirds {
+            let encounter = Encounter(context: viewContext)
+            encounter.timestamp = encounterDate
+            encounter.location = encounterLocation
+            encounter.bird = bird
+        }
+        
+        try? viewContext.save()
+        encounterBirds = []
+        self.presentation.wrappedValue.dismiss()
+    }
+    
+    func cancel() {
+        self.presentation.wrappedValue.dismiss()
     }
 }
 

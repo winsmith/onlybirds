@@ -9,6 +9,8 @@ import CoreData
 import SwiftUI
 
 struct ContentView: View {
+    @State var logSheetVisible: Bool = false
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -17,17 +19,17 @@ struct ContentView: View {
     private var items: FetchedResults<Bird>
 
     var body: some View {
-        TabView {
-            LogEncounterStagingView()
-                .tabItem {
-                    Label("Add", systemImage: "plus")
+        EncounterListView()
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Button("Add") {
+                        logSheetVisible = true
+                    }
+                    .sheet(isPresented: $logSheetVisible) { 
+                        LogEncounterStagingView()
+                    }
                 }
-
-            EncounterListView()
-                .tabItem {
-                    Label("Encounters", systemImage: "list.dash")
-                }
-        }
+            }
     }
 }
 
