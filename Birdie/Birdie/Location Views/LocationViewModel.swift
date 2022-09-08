@@ -9,6 +9,8 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     private let locationManager: CLLocationManager
     
+    @Published var textDescription: String = ""
+    
     override init() {
         locationManager = CLLocationManager()
         authorizationStatus = locationManager.authorizationStatus
@@ -30,13 +32,33 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         lastSeenLocation = locations.first
         fetchCountryAndCity(for: locations.first)
+        textDescription = concatenateTextDescription()
     }
 
     func fetchCountryAndCity(for location: CLLocation?) {
         guard let location = location else { return }
         let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
+        geocoder.reverseGeocodeLocation(location) { placemarks, _ in
             self.currentPlacemark = placemarks?.first
         }
+    }
+    
+    func concatenateTextDescription() -> String {
+        let adminArea = currentPlacemark?.administrativeArea
+        let country = currentPlacemark?.country
+            
+        if let adminArea, let country {
+            return "\(adminArea), \(country)"
+        }
+            
+        if let adminArea {
+            return adminArea
+        }
+            
+        if let country {
+            return country
+        }
+            
+        return "–"
     }
 }

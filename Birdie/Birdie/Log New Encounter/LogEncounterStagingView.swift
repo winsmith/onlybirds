@@ -10,7 +10,8 @@ import SwiftUI
 struct LogEncounterStagingView: View {
     @State var encounterDate: Date = .init()
     @State var encounterBirds: [Bird] = []
-    @State var encounterLocation: String = ""
+    
+    @StateObject var locationViewModel = LocationViewModel()
     
     @Namespace var namespace
     
@@ -52,7 +53,7 @@ struct LogEncounterStagingView: View {
                 .contentTransition(.interpolate)
                 
                 Section {
-                    LocationPickerView()
+                    LocationPickerView(locationViewModel: locationViewModel)
                 } header: {
                     Text("Location")
                 } footer: {
@@ -100,7 +101,9 @@ struct LogEncounterStagingView: View {
         for bird in encounterBirds {
             let encounter = Encounter(context: viewContext)
             encounter.timestamp = encounterDate
-            encounter.location = encounterLocation
+            encounter.locationLatitude = locationViewModel.lastSeenLocation?.coordinate.latitude ?? 0
+            encounter.locationLongitude = locationViewModel.lastSeenLocation?.coordinate.longitude ?? 0
+            encounter.locationDisplayString = locationViewModel.textDescription
             encounter.bird = bird
         }
         

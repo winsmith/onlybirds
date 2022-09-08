@@ -8,33 +8,20 @@
 import SwiftUI
 
 struct LocationPickerView: View {
-    @StateObject var locationViewModel = LocationViewModel()
+    @ObservedObject var locationViewModel: LocationViewModel
     
     var body: some View {
-        
-        if locationViewModel.authorizationStatus == .authorizedAlways || locationViewModel.authorizationStatus == .authorizedWhenInUse {
-            VStack {
-                HStack {
-                    Text(locationViewModel.currentPlacemark?.administrativeArea ?? "")
-                    Text(locationViewModel.currentPlacemark?.country ?? "")
+        HStack {
+            if locationViewModel.authorizationStatus == .authorizedAlways || locationViewModel.authorizationStatus == .authorizedWhenInUse {
+                VStack(alignment: .leading) {
+                    Text(locationViewModel.textDescription)
+                    Text("\(locationViewModel.lastSeenLocation?.coordinate.latitude ?? 0) \(locationViewModel.lastSeenLocation?.coordinate.longitude ?? 0)")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
                 }
-                
-                HStack {
-                    Text("\(locationViewModel.lastSeenLocation?.coordinate.latitude ?? 0)")
-                    Text("\(locationViewModel.lastSeenLocation?.coordinate.longitude ?? 0)")
-                }
-                .font(.footnote)
-                .foregroundColor(.gray)
+            } else {
+                LocationStatusView()
             }
-        } else {
-            LocationStatusView()
         }
-        
-    }
-}
-
-struct LocationPickerView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationPickerView()
     }
 }
