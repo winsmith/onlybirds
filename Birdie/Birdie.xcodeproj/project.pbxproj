@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B10EB1128CA136300C5EF1F /* LogEncounterStagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB1028CA136300C5EF1F /* LogEncounterStagingView.swift */; };
 		2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117828C8F11400CCE310 /* BirdieApp.swift */; };
 		2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117A28C8F11400CCE310 /* ContentView.swift */; };
 		2BC1117D28C8F11500CCE310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1117C28C8F11500CCE310 /* Assets.xcassets */; };
@@ -17,7 +18,6 @@
 		2BC1119928C8F11500CCE310 /* BirdieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119828C8F11500CCE310 /* BirdieUITests.swift */; };
 		2BC1119B28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */; };
 		2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */; };
-		2BC111AA28C8FACB00CCE310 /* LogEncounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111A928C8FACB00CCE310 /* LogEncounterView.swift */; };
 		2BC111AC28C8FF2500CCE310 /* EncounterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B10EB1028CA136300C5EF1F /* LogEncounterStagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEncounterStagingView.swift; sourceTree = "<group>"; };
 		2BC1117528C8F11400CCE310 /* Birdie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC1117828C8F11400CCE310 /* BirdieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieApp.swift; sourceTree = "<group>"; };
 		2BC1117A28C8F11400CCE310 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		2BC1119828C8F11500CCE310 /* BirdieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITests.swift; sourceTree = "<group>"; };
 		2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdNameUpdater.swift; sourceTree = "<group>"; };
-		2BC111A928C8FACB00CCE310 /* LogEncounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEncounterView.swift; sourceTree = "<group>"; };
 		2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,8 +111,8 @@
 				2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */,
 				2BC1117E28C8F11500CCE310 /* Preview Content */,
 				2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */,
-				2BC111A928C8FACB00CCE310 /* LogEncounterView.swift */,
 				2BC111AB28C8FF2500CCE310 /* EncounterListView.swift */,
+				2B10EB1028CA136300C5EF1F /* LogEncounterStagingView.swift */,
 			);
 			path = Birdie;
 			sourceTree = "<group>";
@@ -275,8 +275,8 @@
 				2BC111AC28C8FF2500CCE310 /* EncounterListView.swift in Sources */,
 				2BC1118228C8F11500CCE310 /* Persistence.swift in Sources */,
 				2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */,
+				2B10EB1128CA136300C5EF1F /* LogEncounterStagingView.swift in Sources */,
 				2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */,
-				2BC111AA28C8FACB00CCE310 /* LogEncounterView.swift in Sources */,
 				2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */,
 				2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */,
 			);

@@ -18,7 +18,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            LogEncounterView()
+            LogEncounterStagingView()
                 .tabItem {
                     Label("Add", systemImage: "plus")
                 }
