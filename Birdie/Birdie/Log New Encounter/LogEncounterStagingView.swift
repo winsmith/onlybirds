@@ -30,13 +30,11 @@ struct LogEncounterStagingView: View {
         NavigationView {
             Form {
                 Section("Birds encountered") {
+                    ForEach(encounterBirds) { bird in
+                        Text(bird.canonicalName ?? "BIRD")
+                    }
                     
-                        ForEach(encounterBirds) { bird in
-                            Text(bird.canonicalName ?? "BIRD")
-                        }
-                    
-                    
-                    TextField("Add Bird", text: $query)
+                    TextField("Enter a bird name", text: $query)
                         .submitLabel(.done)
                         .focused($queryFieldIsFocused)
                         .onChange(of: query, perform: updateQuery)
@@ -51,8 +49,23 @@ struct LogEncounterStagingView: View {
                         }
                     }
                 }
-                
                 .contentTransition(.interpolate)
+                
+                Section {
+                    LocationPickerView()
+                } header: {
+                    Text("Location")
+                } footer: {
+                    Text("Where did you encounter the bird?")
+                }
+                
+                Section {
+                    DatePicker("seen at", selection: $encounterDate)
+                } header: {
+                    Text("Date")
+                } footer: {
+                    Text("When did you encounter the bird?")
+                }
             }
             .navigationTitle("Add Encounter")
             .toolbar {
@@ -63,11 +76,11 @@ struct LogEncounterStagingView: View {
                     Button("Cancel", action: cancel)
                 }
             }
-            .onAppear {
-              DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
-                self.queryFieldIsFocused = true
-              }
-            }
+//            .onAppear {
+//              DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+//                self.queryFieldIsFocused = true
+//              }
+//            }
         }
     }
     
@@ -81,7 +94,6 @@ struct LogEncounterStagingView: View {
         query = ""
         queryFieldIsFocused = false
         encounterBirds.append(bird)
-        
     }
     
     func save() {
@@ -94,11 +106,11 @@ struct LogEncounterStagingView: View {
         
         try? viewContext.save()
         encounterBirds = []
-        self.presentation.wrappedValue.dismiss()
+        presentation.wrappedValue.dismiss()
     }
     
     func cancel() {
-        self.presentation.wrappedValue.dismiss()
+        presentation.wrappedValue.dismiss()
     }
 }
 

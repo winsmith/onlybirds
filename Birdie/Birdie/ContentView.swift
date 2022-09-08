@@ -22,8 +22,11 @@ struct ContentView: View {
         EncounterListView()
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
-                    Button("Add") {
+                    
+                    Button {
                         logSheetVisible = true
+                    } label: {
+                        Label("Add", systemImage: "bird.fill")
                     }
                     .sheet(isPresented: $logSheetVisible) { 
                         LogEncounterStagingView()

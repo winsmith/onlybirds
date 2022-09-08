@@ -17,16 +17,26 @@ struct EncounterListView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(encounters) { item in
-                    NavigationLink {
-                        Text(item.timestamp ?? Date(), style: .relative)
-                    } label: {
-                        Text(item.timestamp ?? Date(), style: .relative)
+            VStack {
+                if encounters.isEmpty {
+                    Text("Please add a bird encounter with the add button")
+                        .padding()
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.gray)
+                } else {
+                    List {
+                        ForEach(encounters) { item in
+                            NavigationLink {
+                                Text(item.timestamp ?? Date(), style: .relative)
+                            } label: {
+                                Text(item.timestamp ?? Date(), style: .relative)
+                            }
+                        }
+                        .onDelete(perform: deleteItems)
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
+            .navigationTitle("Vögeln mit Nils")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
