@@ -3,7 +3,7 @@ import CoreData
 
 class BirdNameUpdater {
     let urls = [
-        "German": URL(string: "https://github.com/winsmith/birdy/raw/main/birdnames/german.txt")!,
+        "German": URL(string: "https://github.com/winsmith/onlybirds/raw/main/birdnames/german.txt")!,
     ]
     
     let context: NSManagedObjectContext

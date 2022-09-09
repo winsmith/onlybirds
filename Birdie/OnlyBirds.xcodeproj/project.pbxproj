@@ -14,12 +14,12 @@
 		2B10EB2028CA528800C5EF1F /* EncounterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB1F28CA528800C5EF1F /* EncounterListCell.swift */; };
 		2B10EB2228CA53D300C5EF1F /* Encounter+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB2128CA53D300C5EF1F /* Encounter+Section.swift */; };
 		2B10EB2428CA58AF00C5EF1F /* EncounterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10EB2328CA58AF00C5EF1F /* EncounterDetailView.swift */; };
-		2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117828C8F11400CCE310 /* BirdieApp.swift */; };
+		2BC1117928C8F11400CCE310 /* OnlyBirdsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117828C8F11400CCE310 /* OnlyBirdsApp.swift */; };
 		2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1117A28C8F11400CCE310 /* ContentView.swift */; };
 		2BC1117D28C8F11500CCE310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1117C28C8F11500CCE310 /* Assets.xcassets */; };
 		2BC1118028C8F11500CCE310 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1117F28C8F11500CCE310 /* Preview Assets.xcassets */; };
 		2BC1118228C8F11500CCE310 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118128C8F11500CCE310 /* Persistence.swift */; };
-		2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */; };
+		2BC1118528C8F11500CCE310 /* OnlyBirds.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118328C8F11500CCE310 /* OnlyBirds.xcdatamodeld */; };
 		2BC1118F28C8F11500CCE310 /* BirdieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1118E28C8F11500CCE310 /* BirdieTests.swift */; };
 		2BC1119928C8F11500CCE310 /* BirdieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119828C8F11500CCE310 /* BirdieUITests.swift */; };
 		2BC1119B28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */; };
@@ -53,16 +53,16 @@
 		2B10EB1F28CA528800C5EF1F /* EncounterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterListCell.swift; sourceTree = "<group>"; };
 		2B10EB2128CA53D300C5EF1F /* Encounter+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encounter+Section.swift"; sourceTree = "<group>"; };
 		2B10EB2328CA58AF00C5EF1F /* EncounterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncounterDetailView.swift; sourceTree = "<group>"; };
-		2BC1117528C8F11400CCE310 /* Birdie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BC1117828C8F11400CCE310 /* BirdieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieApp.swift; sourceTree = "<group>"; };
+		2BC1117528C8F11400CCE310 /* OnlyBirds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlyBirds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC1117828C8F11400CCE310 /* OnlyBirdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyBirdsApp.swift; sourceTree = "<group>"; };
 		2BC1117A28C8F11400CCE310 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BC1117C28C8F11500CCE310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC1117F28C8F11500CCE310 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BC1118128C8F11500CCE310 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2BC1118428C8F11500CCE310 /* Birdie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Birdie.xcdatamodel; sourceTree = "<group>"; };
-		2BC1118A28C8F11500CCE310 /* BirdieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC1118A28C8F11500CCE310 /* OnlyBirdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlyBirdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC1118E28C8F11500CCE310 /* BirdieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieTests.swift; sourceTree = "<group>"; };
-		2BC1119428C8F11500CCE310 /* BirdieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC1119428C8F11500CCE310 /* OnlyBirdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlyBirdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC1119828C8F11500CCE310 /* BirdieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITests.swift; sourceTree = "<group>"; };
 		2BC1119A28C8F11500CCE310 /* BirdieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2BC111A728C8F55700CCE310 /* BirdNameUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdNameUpdater.swift; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 		2BC1117628C8F11400CCE310 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BC1117528C8F11400CCE310 /* Birdie.app */,
-				2BC1118A28C8F11500CCE310 /* BirdieTests.xctest */,
-				2BC1119428C8F11500CCE310 /* BirdieUITests.xctest */,
+				2BC1117528C8F11400CCE310 /* OnlyBirds.app */,
+				2BC1118A28C8F11500CCE310 /* OnlyBirdsTests.xctest */,
+				2BC1119428C8F11500CCE310 /* OnlyBirdsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,11 +156,11 @@
 			isa = PBXGroup;
 			children = (
 				2B10EB1828CA2A7400C5EF1F /* Info.plist */,
-				2BC1117828C8F11400CCE310 /* BirdieApp.swift */,
+				2BC1117828C8F11400CCE310 /* OnlyBirdsApp.swift */,
 				2BC1117A28C8F11400CCE310 /* ContentView.swift */,
 				2BC1117C28C8F11500CCE310 /* Assets.xcassets */,
 				2B10EB1C28CA320600C5EF1F /* Bird Autocompletion Data */,
-				2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */,
+				2BC1118328C8F11500CCE310 /* OnlyBirds.xcdatamodeld */,
 				2B10EB1D28CA321B00C5EF1F /* Encounter List */,
 				2B10EB1E28CA322200C5EF1F /* Log New Encounter */,
 				2B10EB1B28CA31FA00C5EF1F /* Location Views */,
@@ -197,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BC1117428C8F11400CCE310 /* Birdie */ = {
+		2BC1117428C8F11400CCE310 /* OnlyBirds */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BC1119E28C8F11500CCE310 /* Build configuration list for PBXNativeTarget "Birdie" */;
+			buildConfigurationList = 2BC1119E28C8F11500CCE310 /* Build configuration list for PBXNativeTarget "OnlyBirds" */;
 			buildPhases = (
 				2BC1117128C8F11400CCE310 /* Sources */,
 				2BC1117228C8F11400CCE310 /* Frameworks */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = Birdie;
+			name = OnlyBirds;
 			productName = Birdie;
-			productReference = 2BC1117528C8F11400CCE310 /* Birdie.app */;
+			productReference = 2BC1117528C8F11400CCE310 /* OnlyBirds.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BC1118928C8F11500CCE310 /* BirdieTests */ = {
+		2BC1118928C8F11500CCE310 /* OnlyBirdsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BC111A128C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieTests" */;
+			buildConfigurationList = 2BC111A128C8F11500CCE310 /* Build configuration list for PBXNativeTarget "OnlyBirdsTests" */;
 			buildPhases = (
 				2BC1118628C8F11500CCE310 /* Sources */,
 				2BC1118728C8F11500CCE310 /* Frameworks */,
@@ -227,14 +227,14 @@
 			dependencies = (
 				2BC1118C28C8F11500CCE310 /* PBXTargetDependency */,
 			);
-			name = BirdieTests;
+			name = OnlyBirdsTests;
 			productName = BirdieTests;
-			productReference = 2BC1118A28C8F11500CCE310 /* BirdieTests.xctest */;
+			productReference = 2BC1118A28C8F11500CCE310 /* OnlyBirdsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2BC1119328C8F11500CCE310 /* BirdieUITests */ = {
+		2BC1119328C8F11500CCE310 /* OnlyBirdsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BC111A428C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieUITests" */;
+			buildConfigurationList = 2BC111A428C8F11500CCE310 /* Build configuration list for PBXNativeTarget "OnlyBirdsUITests" */;
 			buildPhases = (
 				2BC1119028C8F11500CCE310 /* Sources */,
 				2BC1119128C8F11500CCE310 /* Frameworks */,
@@ -245,9 +245,9 @@
 			dependencies = (
 				2BC1119628C8F11500CCE310 /* PBXTargetDependency */,
 			);
-			name = BirdieUITests;
+			name = OnlyBirdsUITests;
 			productName = BirdieUITests;
-			productReference = 2BC1119428C8F11500CCE310 /* BirdieUITests.xctest */;
+			productReference = 2BC1119428C8F11500CCE310 /* OnlyBirdsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -273,7 +273,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BC1117028C8F11400CCE310 /* Build configuration list for PBXProject "Birdie" */;
+			buildConfigurationList = 2BC1117028C8F11400CCE310 /* Build configuration list for PBXProject "OnlyBirds" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -286,9 +286,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BC1117428C8F11400CCE310 /* Birdie */,
-				2BC1118928C8F11500CCE310 /* BirdieTests */,
-				2BC1119328C8F11500CCE310 /* BirdieUITests */,
+				2BC1117428C8F11400CCE310 /* OnlyBirds */,
+				2BC1118928C8F11500CCE310 /* OnlyBirdsTests */,
+				2BC1119328C8F11500CCE310 /* OnlyBirdsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -331,9 +331,9 @@
 				2BC1117B28C8F11400CCE310 /* ContentView.swift in Sources */,
 				2B10EB2228CA53D300C5EF1F /* Encounter+Section.swift in Sources */,
 				2B10EB1128CA136300C5EF1F /* LogEncounterStagingView.swift in Sources */,
-				2BC1118528C8F11500CCE310 /* Birdie.xcdatamodeld in Sources */,
+				2BC1118528C8F11500CCE310 /* OnlyBirds.xcdatamodeld in Sources */,
 				2B10EB2028CA528800C5EF1F /* EncounterListCell.swift in Sources */,
-				2BC1117928C8F11400CCE310 /* BirdieApp.swift in Sources */,
+				2BC1117928C8F11400CCE310 /* OnlyBirdsApp.swift in Sources */,
 				2B10EB2428CA58AF00C5EF1F /* EncounterDetailView.swift in Sources */,
 				2BC111A828C8F55700CCE310 /* BirdNameUpdater.swift in Sources */,
 				2B10EB1328CA28CB00C5EF1F /* LocationViewModel.swift in Sources */,
@@ -362,12 +362,12 @@
 /* Begin PBXTargetDependency section */
 		2BC1118C28C8F11500CCE310 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2BC1117428C8F11400CCE310 /* Birdie */;
+			target = 2BC1117428C8F11400CCE310 /* OnlyBirds */;
 			targetProxy = 2BC1118B28C8F11500CCE310 /* PBXContainerItemProxy */;
 		};
 		2BC1119628C8F11500CCE310 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2BC1117428C8F11400CCE310 /* Birdie */;
+			target = 2BC1117428C8F11400CCE310 /* OnlyBirds */;
 			targetProxy = 2BC1119528C8F11500CCE310 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -565,7 +565,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birdie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Birdie";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlyBirds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlyBirds";
 			};
 			name = Debug;
 		};
@@ -585,7 +585,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Birdie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Birdie";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlyBirds.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlyBirds";
 			};
 			name = Release;
 		};
@@ -628,7 +628,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BC1117028C8F11400CCE310 /* Build configuration list for PBXProject "Birdie" */ = {
+		2BC1117028C8F11400CCE310 /* Build configuration list for PBXProject "OnlyBirds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC1119C28C8F11500CCE310 /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BC1119E28C8F11500CCE310 /* Build configuration list for PBXNativeTarget "Birdie" */ = {
+		2BC1119E28C8F11500CCE310 /* Build configuration list for PBXNativeTarget "OnlyBirds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC1119F28C8F11500CCE310 /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BC111A128C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieTests" */ = {
+		2BC111A128C8F11500CCE310 /* Build configuration list for PBXNativeTarget "OnlyBirdsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC111A228C8F11500CCE310 /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BC111A428C8F11500CCE310 /* Build configuration list for PBXNativeTarget "BirdieUITests" */ = {
+		2BC111A428C8F11500CCE310 /* Build configuration list for PBXNativeTarget "OnlyBirdsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC111A528C8F11500CCE310 /* Debug */,
@@ -667,13 +667,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2BC1118328C8F11500CCE310 /* Birdie.xcdatamodeld */ = {
+		2BC1118328C8F11500CCE310 /* OnlyBirds.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				2BC1118428C8F11500CCE310 /* Birdie.xcdatamodel */,
 			);
 			currentVersion = 2BC1118428C8F11500CCE310 /* Birdie.xcdatamodel */;
-			path = Birdie.xcdatamodeld;
+			path = OnlyBirds.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

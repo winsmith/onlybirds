@@ -20,7 +20,7 @@ struct EncounterListView: View {
         NavigationView {
             VStack {
                 if encounters.isEmpty {
-                    Text("Please add a bird encounter with the add button")
+                    Text("Please add a bird encounter with the add button below")
                         .padding()
                         .multilineTextAlignment(.center)
                         .foregroundColor(.gray)
@@ -41,7 +41,7 @@ struct EncounterListView: View {
                     }
                 }
             }
-            .navigationTitle("Vögeln mit Nils")
+            .navigationTitle("OnlyBirds")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()

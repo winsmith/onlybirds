@@ -1,5 +1,5 @@
 //
-//  BirdieApp.swift
+//  OnlyBirdsApp.swift
 //  Birdie
 //
 //  Created by Daniel Jilg on 07.09.22.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BirdieApp: App {
+struct OnlyBirdsApp: App {
     let persistenceController = PersistenceController.shared
 
     @AppStorage("birdsAreInitialized") private var birdsAreInitialized = false
