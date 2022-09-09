@@ -1,0 +1,16 @@
+[
+  {
+    "title": "German Bird Names",
+    "description": "A list of European birds, for German language speakers",
+    "language": "German",
+    "url": "https://github.com/winsmith/onlybirds/raw/main/birdnames/german.txt",
+    "order": 10
+  },
+  {
+    "title": "Default Bird Names",
+    "description": "A list of world wide birds, for English language speakers",
+    "language": "English",
+    "url": "https://github.com/winsmith/onlybirds/raw/main/birdnames/german.txt",
+    "order": 1
+  }
+]
